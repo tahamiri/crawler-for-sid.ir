@@ -39,5 +39,6 @@ for i in range(0,len(links2)):
 for i in range(0 , len(links2)):
     url = links2[i]
     response = requests.get(url)
+    #ادرس فایلی که میخواهید دانلود ها در انجا ذخیره شود را در خط زیر وارد کنید
     with open(f'/home/taha/Downloads/{tag}{i}.pdf', 'wb') as f:
         f.write(response.content)
